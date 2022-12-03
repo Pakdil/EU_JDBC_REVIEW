@@ -33,7 +33,11 @@ public class ConnectionTest {
 //            resultSet.next();
 //        }
 
-        while (resultSet.next()) {  //
+        System.out.println("*****************************");
+       // resultSet.first();
+
+
+        while (resultSet.next()) {  // result set continue from 3rd line, because we have 2 resultSet.next before
             System.out.println(resultSet.getString(2));
 
 
@@ -41,8 +45,5 @@ public class ConnectionTest {
 
 
     }
-
-
-
 
 }
