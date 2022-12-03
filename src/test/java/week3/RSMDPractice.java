@@ -26,5 +26,5 @@ public class RSMDPractice {
 
     // practice
     // print full address (address + postal code + city + state)
-    
+
 }
