@@ -19,6 +19,26 @@ public class ConnectionTest {
         System.out.println(resultSet.getString("first_name"));
         System.out.println(resultSet.getString("last_name"));
         System.out.println(resultSet.getString(4));
+        System.out.println(resultSet.getString(8));
+
+        resultSet.next();  // now my pointer is on the second line
+
+        System.out.println(resultSet.getString(5));
+
+
+        System.out.println("Full name is: " + resultSet.getString(2) + " " + resultSet.getString(3));
+
+//        for (int i = 0; i < 106; i++) {
+//            System.out.println(resultSet.getString(2));
+//            resultSet.next();
+//        }
+
+        while (resultSet.next()) {  //
+            System.out.println(resultSet.getString(2));
+
+
+        }
+
 
     }
 
